@@ -1,6 +1,10 @@
 __version__ = "0.0.0"
 from . import device, distributed
 
+from tensorexpr.array_api import (
+    arange,
+)
+
 import sys
 if sys.version_info < (3, 8):
     import importlib_metadata
@@ -21,6 +25,11 @@ float = __builtins__['float']
 Size = list
 class Tensor:
     pass
+    #def __init__(self, val):
+    #    self.val = val
+    #def float(self):
+    #    return self.to(float32)
+    #    return Tensor(self.val.value
 FloatTensor = Tensor
 LongTensor = Tensor
 BoolTensor = Tensor
