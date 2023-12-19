@@ -1,3 +1,3 @@
 class Expr:
-    def __
-    pass
+    def eval(self):
+        raise NotImplementedError()
